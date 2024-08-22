@@ -1,5 +1,14 @@
 <?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
 
-echo"haysss"
+$conn = new mysqli($servername, $username, $password);
+
+if($conn->connect_error) {
+	die("Connection Failed: " . $conn->connect_error);
+}
+
+echo "Connectec Successfully";
 
 ?>
